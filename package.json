@@ -16,7 +16,19 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "tachyons-border-radius": "^5.1.3",
+    "tachyons-display": "^5.0.5",
+    "tachyons-flexbox": "^2.1.1",
+    "tachyons-heights": "^6.1.4",
+    "tachyons-hovers": "^2.5.2",
+    "tachyons-skins": "^4.1.1",
+    "tachyons-skins-pseudo": "^1.0.5",
+    "tachyons-spacing": "^6.0.5",
+    "tachyons-text-align": "^3.1.0",
+    "tachyons-text-decoration": "^4.0.6",
+    "tachyons-type-scale": "^6.1.1",
+    "tachyons-widths": "^5.2.1"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
