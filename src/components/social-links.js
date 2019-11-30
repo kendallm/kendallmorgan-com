@@ -43,7 +43,7 @@ const SocialLinks = () => (
     </a>
     <a
       class="no-underline near-white bg-animate bg-near-black hover-bg-gray inline-flex items-center ma2 tc br2 pa2"
-      href="https://twitter.com/kendalljm"
+      href="https://twitter.com/kendallmorgan"
     >
       <svg
         class="dib h2 w2"
