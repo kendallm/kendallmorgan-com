@@ -3,36 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>localhost/</loc>
+    <loc>https://kendallmorgan.com/</loc>
     <lastmod>2020-07-29T20:46:29-07:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/posts/my-first-post/</loc>
+    <loc>https://kendallmorgan.com/posts/my-first-post/</loc>
     <lastmod>2020-07-29T20:46:29-07:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/</loc>
+    <loc>https://kendallmorgan.com/tags/</loc>
     <lastmod>2020-07-29T20:46:29-07:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/untagged/</loc>
+    <loc>https://kendallmorgan.com/tags/untagged/</loc>
     <lastmod>2020-07-29T20:46:29-07:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/posts/</loc>
+    <loc>https://kendallmorgan.com/posts/</loc>
     <lastmod>2020-07-29T20:45:47-07:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/blog/</loc>
+    <loc>https://kendallmorgan.com/blog/</loc>
   </url>
   
   <url>
-    <loc>localhost/series/</loc>
+    <loc>https://kendallmorgan.com/series/</loc>
   </url>
   
 </urlset>

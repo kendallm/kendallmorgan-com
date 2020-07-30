@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>untagged on Kendall Morgan</title>
-    <link>localhost/tags/untagged/</link>
+    <link>https://kendallmorgan.com/tags/untagged/</link>
     <description>Recent content in untagged on Kendall Morgan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 29 Jul 2020 20:46:29 -0700</lastBuildDate>
     
-	<atom:link href="localhost/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kendallmorgan.com/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My First Post</title>
-      <link>localhost/posts/my-first-post/</link>
+      <link>https://kendallmorgan.com/posts/my-first-post/</link>
       <pubDate>Wed, 29 Jul 2020 20:46:29 -0700</pubDate>
       
-      <guid>localhost/posts/my-first-post/</guid>
+      <guid>https://kendallmorgan.com/posts/my-first-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>localhost/posts/</link>
+      <link>https://kendallmorgan.com/posts/</link>
       <pubDate>Wed, 29 Jul 2020 20:45:47 -0700</pubDate>
       
-      <guid>localhost/posts/</guid>
+      <guid>https://kendallmorgan.com/posts/</guid>
       <description></description>
     </item>
     
