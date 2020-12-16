@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kendall Morgan</title>
-    <link>https://kendallmorgan.com/</link>
-    <description>Recent content on Kendall Morgan</description>
+    <title>notes on Kendall Morgan</title>
+    <link>https://kendallmorgan.com/tags/notes/</link>
+    <description>Recent content in notes on Kendall Morgan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 09 Nov 2020 20:17:32 -0800</lastBuildDate><atom:link href="https://kendallmorgan.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Nov 2020 20:17:32 -0800</lastBuildDate><atom:link href="https://kendallmorgan.com/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes on Computational Hardness</title>
       <link>https://kendallmorgan.com/posts/computational-hardness/</link>
@@ -16,16 +16,6 @@
       <guid>https://kendallmorgan.com/posts/computational-hardness/</guid>
       <description>Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.
 Before we dive into hardness we need to define some terms.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://kendallmorgan.com/posts/my-first-post/</link>
-      <pubDate>Wed, 29 Jul 2020 20:46:29 -0700</pubDate>
-      
-      <guid>https://kendallmorgan.com/posts/my-first-post/</guid>
-      <description>Expect to see more from me soon. Until then:
-print(&amp;#39;Hello, world&amp;#39;) </description>
     </item>
     
   </channel>
