@@ -16,21 +16,13 @@
             
             <guid>https://kendallmorgan.com/posts/computational-hardness/</guid>
             <description>Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.
-Before we dive into hardness we need to define some terms.</description>
+P When we say a problem is in P, that means it can be solved in polynomial time, with respect to the input size.</description>
             <content type="html"><![CDATA[<figure class="center">
     <img src="/img/p-np.png"/> 
 </figure>
 
 <p>Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm.
 We bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.</p>
-<p>Before we dive into hardness we need to define some terms.</p>
-<ul>
-<li>Reductions
-<ul>
-<li>A reduction, or reducing a problem means to modify one input into a form that can be solved</li>
-</ul>
-</li>
-</ul>
 <h3 id="p">P</h3>
 <p>When we say a problem is in P, that means it can be solved in polynomial time, with respect to the input size. Concretely, given an input of size $N$, a problem can be solved in $O(N^{x})$, where $x$ is some constant value. The key thing here is that as long as the complexity is polynomial then it is in the class P.</p>
 <h3 id="np">NP</h3>
