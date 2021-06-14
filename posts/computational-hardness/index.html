@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Kendall Morgan ">
-<meta name="description" content="Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.
-P When we say a problem is in P, that means it can be solved in polynomial time, with respect to the input size." />
+<meta name="description" content="Disclaimer: These are personal notes and are not meant to be authoritative
+Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We typically bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete." />
 <meta name="keywords" content=", algorithms, computation, computer science, notes" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -43,11 +43,11 @@ P When we say a problem is in P, that means it can be solved in polynomial time,
 
 
 <meta itemprop="name" content="Notes on Computational Hardness">
-<meta itemprop="description" content="Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.
-P When we say a problem is in P, that means it can be solved in polynomial time, with respect to the input size.">
+<meta itemprop="description" content="Disclaimer: These are personal notes and are not meant to be authoritative
+Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We typically bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.">
 <meta itemprop="datePublished" content="2020-11-09T20:17:32-08:00" />
 <meta itemprop="dateModified" content="2020-11-09T20:17:32-08:00" />
-<meta itemprop="wordCount" content="592">
+<meta itemprop="wordCount" content="649">
 <meta itemprop="image" content="https://kendallmorgan.com/img/p-np.png">
 
 
@@ -58,14 +58,14 @@ P When we say a problem is in P, that means it can be solved in polynomial time,
 <meta name="twitter:image" content="https://kendallmorgan.com/img/p-np.png"/>
 
 <meta name="twitter:title" content="Notes on Computational Hardness"/>
-<meta name="twitter:description" content="Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.
-P When we say a problem is in P, that means it can be solved in polynomial time, with respect to the input size."/>
+<meta name="twitter:description" content="Disclaimer: These are personal notes and are not meant to be authoritative
+Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We typically bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete."/>
 
 
 
     <meta property="og:title" content="Notes on Computational Hardness" />
-<meta property="og:description" content="Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.
-P When we say a problem is in P, that means it can be solved in polynomial time, with respect to the input size." />
+<meta property="og:description" content="Disclaimer: These are personal notes and are not meant to be authoritative
+Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We typically bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kendallmorgan.com/posts/computational-hardness/" />
 <meta property="og:image" content="https://kendallmorgan.com/img/p-np.png" />
@@ -115,6 +115,7 @@ P When we say a problem is in P, that means it can be solved in polynomial time,
 <script async src="https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js"></script>
 
 
+<script defer data-domain="kendallmorgan.com" src="https://plausible.io/js/plausible.js"></script>
 
 
     </head>
@@ -174,7 +175,7 @@ P When we say a problem is in P, that means it can be solved in polynomial time,
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        3 minutes
+        4 minutes
 
         
       </p>
@@ -188,12 +189,21 @@ P When we say a problem is in P, that means it can be solved in polynomial time,
       
 
       <div class="post-content">
-        <figure class="center">
+        <p><figure class="center">
     <img src="/img/p-np.png"/> 
 </figure>
 
+Disclaimer: These are personal notes and are not meant to be authoritative</p>
 <p>Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm.
-We bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.</p>
+We typically bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete. There are other complexity classes, but they are out of scope for these notes.</p>
+<p>Before we dive into hardness we need to define some terms.</p>
+<ul>
+<li>Reductions
+<ul>
+<li>A reduction, or reducing a problem means to modify one input into a form that can be solved</li>
+</ul>
+</li>
+</ul>
 <h3 id="p">P</h3>
 <p>When we say a problem is in P, that means it can be solved in polynomial time, with respect to the input size. Concretely, given an input of size $N$, a problem can be solved in $O(N^{x})$, where $x$ is some constant value. The key thing here is that as long as the complexity is polynomial then it is in the class P.</p>
 <h3 id="np">NP</h3>
@@ -248,7 +258,7 @@ We bucket hardness into 4 different classes, P (Polynomial), NP (Non-determinist
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        592 Words
+        649 Words
       </p>
 
       <p>
@@ -388,7 +398,7 @@ We bucket hardness into 4 different classes, P (Polynomial), NP (Non-determinist
                 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
-            <span>&copy; 2020</span>
+            <span>&copy; 2021</span>
             
                 <span><a href="https://kendallmorgan.com">Kendall Morgan</a></span>
             

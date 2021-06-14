@@ -10,6 +10,64 @@
         <atom:link href="https://kendallmorgan.com/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>Notes on Computational Hardness</title>
+            <link>https://kendallmorgan.com/posts/computational-hardness/</link>
+            <pubDate>Mon, 09 Nov 2020 20:17:32 -0800</pubDate>
+            
+            <guid>https://kendallmorgan.com/posts/computational-hardness/</guid>
+            <description>Disclaimer: These are personal notes and are not meant to be authoritative
+Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We typically bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.</description>
+            <content type="html"><![CDATA[<p><figure class="center">
+    <img src="/img/p-np.png"/> 
+</figure>
+
+Disclaimer: These are personal notes and are not meant to be authoritative</p>
+<p>Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm.
+We typically bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete. There are other complexity classes, but they are out of scope for these notes.</p>
+<p>Before we dive into hardness we need to define some terms.</p>
+<ul>
+<li>Reductions
+<ul>
+<li>A reduction, or reducing a problem means to modify one input into a form that can be solved</li>
+</ul>
+</li>
+</ul>
+<h3 id="p">P</h3>
+<p>When we say a problem is in P, that means it can be solved in polynomial time, with respect to the input size. Concretely, given an input of size $N$, a problem can be solved in $O(N^{x})$, where $x$ is some constant value. The key thing here is that as long as the complexity is polynomial then it is in the class P.</p>
+<h3 id="np">NP</h3>
+<p>When a problem is in NP, that means we can verify a solution to the problem in polynomial time. That is, given some solution to a problem we can verify that the solution is correct in $O(N^{x})$, where $x$ is some constant value.</p>
+<h3 id="np-hard">NP-Hard</h3>
+<p>A problem is considered NP-Hard if it can be solved on a Non-Deterministic machine in polynomail time. What that means in practice is that it can be solved in $O(x^N)$ time for some input of size $N$.</p>
+<p>A key thing here is that all NP-Hard problems reduce to each other. This is useful becuase we can prove that a problem is in NP-Hard by reducing a known NP-Hard problem to the problem in question.</p>
+<p>In order to prove that a problem is in NP-Hard we need to reduce a known NP-Hard problem to the target of the proof. Concretely, given a problem A, to prove it is in NP-Hard we must reduce a known NP-Hard probem B, to the problem A.</p>
+<p>There are a few key components to the reductions done in this proof:</p>
+<ul>
+<li>The transformation of the input for B must be done in polynomial time</li>
+<li>The transformation of the output of A must be done in polynomial time</li>
+<li>There is a solution for A if and only iff there is a solution for B</li>
+</ul>
+<h3 id="np-complete">NP-Complete</h3>
+<p>A problem is considered NP-Complete if it is in both NP and NP-Hard. To prove a problem is in NP-Complete we need to prove that a problem is in both NP and NP-Hard.</p>
+<h4 id="known-np-complete-problems">Known NP-Complete problems</h4>
+<p>This is not an exhaustive exploration of NP-Complete problems, but the ones described here a very common and cover some of the most common reductions.</p>
+<h5 id="sat">SAT</h5>
+<p>SAT, or satisfiability is the siminal NP-Complete probelm. Given a series of clauses in conjunctive normal form (CNF), with any number of variables or literals, return a satisfying assignemnt for each variable.</p>
+<h5 id="3-sat">3-SAT</h5>
+<p>3-SAT is very similar to SAT, with one important constraint, each clause has at most 3 literals or variables.</p>
+<h5 id="independent-set">Independent Set</h5>
+<p>Given an undirected Graph $G$, and an upper bound $B$, return a set of verticies where there is no edges between any of the verticies.</p>
+<h5 id="clique">Clique</h5>
+<p>Given an undirected Graph $G$, and a lower bound $B$, return a set of vertices where there is an edge between every pair of verticies.</p>
+<h5 id="vertex-cover">Vertex Cover</h5>
+<p>Given an undirected Graph $G$, and an upper bound $B$, return a set of verticies that cover all edges in the graph.</p>
+<h5 id="subset-sum">Subset Sum</h5>
+<p>Given a set of numbers $S$, and a budget $B$, return a set of numbers $R$ where $R$ is a subset of $S$ and the sum of all numbers in $R$ equals $B$.</p>
+<h5 id="knapsack">Knapsack</h5>
+<p>Given a set of numbers $S$, a capacity $C$, and a budget $B$, return a set of numbers that sum</p>
+]]></content>
+        </item>
+        
+        <item>
             <title>My First Post</title>
             <link>https://kendallmorgan.com/posts/my-first-post/</link>
             <pubDate>Wed, 29 Jul 2020 20:46:29 -0700</pubDate>

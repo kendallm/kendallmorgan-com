@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kendallmorgan.com/</loc>
-    <lastmod>2020-07-29T20:46:29-07:00</lastmod>
+    <loc>https://kendallmorgan.com/tags/algorithms/</loc>
+    <lastmod>2020-11-09T20:17:32-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://kendallmorgan.com/posts/my-first-post/</loc>
-    <lastmod>2020-07-29T20:46:29-07:00</lastmod>
+    <loc>https://kendallmorgan.com/tags/computation/</loc>
+    <lastmod>2020-11-09T20:17:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kendallmorgan.com/tags/computer-science/</loc>
+    <lastmod>2020-11-09T20:17:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kendallmorgan.com/</loc>
+    <lastmod>2020-11-09T20:17:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kendallmorgan.com/tags/notes/</loc>
+    <lastmod>2020-11-09T20:17:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kendallmorgan.com/posts/computational-hardness/</loc>
+    <lastmod>2020-11-09T20:17:32-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://kendallmorgan.com/tags/</loc>
+    <lastmod>2020-11-09T20:17:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kendallmorgan.com/posts/my-first-post/</loc>
     <lastmod>2020-07-29T20:46:29-07:00</lastmod>
   </url>
   
