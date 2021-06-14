@@ -7,17 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 09 Nov 2020 20:17:32 -0800</lastBuildDate><atom:link href="https://kendallmorgan.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Notes on Computational Hardness</title>
-      <link>https://kendallmorgan.com/posts/computational-hardness/</link>
-      <pubDate>Mon, 09 Nov 2020 20:17:32 -0800</pubDate>
-      
-      <guid>https://kendallmorgan.com/posts/computational-hardness/</guid>
-      <description>Disclaimer: These are personal notes and are not meant to be authoritative
-Computatioinal hardness is a measure of how efficiently an algorithm can run to solve a problem. Efficiency in this context is computational complexity. Understanding hardness is critical becuase it allows you to get an idea of the lower bounds of complexity for an algorithm. We typically bucket hardness into 4 different classes, P (Polynomial), NP (Non-deterministic Polynomail), NP-Hard, and NP-Complete.</description>
-    </item>
-    
+    <lastBuildDate>Wed, 29 Jul 2020 20:46:29 -0700</lastBuildDate><atom:link href="https://kendallmorgan.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>https://kendallmorgan.com/posts/my-first-post/</link>
