@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kendallmorgan.com/</loc>
-    <lastmod>2020-07-29T20:46:29-07:00</lastmod>
+    <loc>https://kendallmorgan.com/tags/beginner/</loc>
+    <lastmod>2021-07-04T16:26:56-07:00</lastmod>
   </url><url>
-    <loc>https://kendallmorgan.com/posts/my-first-post/</loc>
-    <lastmod>2020-07-29T20:46:29-07:00</lastmod>
+    <loc>https://kendallmorgan.com/posts/helping-someone-learn-to-program/</loc>
+    <lastmod>2021-07-04T16:26:56-07:00</lastmod>
+  </url><url>
+    <loc>https://kendallmorgan.com/</loc>
+    <lastmod>2021-07-04T16:26:56-07:00</lastmod>
+  </url><url>
+    <loc>https://kendallmorgan.com/tags/software/</loc>
+    <lastmod>2021-07-04T16:26:56-07:00</lastmod>
   </url><url>
     <loc>https://kendallmorgan.com/tags/</loc>
+    <lastmod>2021-07-04T16:26:56-07:00</lastmod>
+  </url><url>
+    <loc>https://kendallmorgan.com/tags/teaching/</loc>
+    <lastmod>2021-07-04T16:26:56-07:00</lastmod>
+  </url><url>
+    <loc>https://kendallmorgan.com/posts/my-first-post/</loc>
     <lastmod>2020-07-29T20:46:29-07:00</lastmod>
   </url><url>
     <loc>https://kendallmorgan.com/tags/untagged/</loc>

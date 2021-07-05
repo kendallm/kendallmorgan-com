@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kendall Morgan</title>
-    <link>https://kendallmorgan.com/</link>
-    <description>Recent content on Kendall Morgan</description>
+    <title>beginner on Kendall Morgan</title>
+    <link>https://kendallmorgan.com/tags/beginner/</link>
+    <description>Recent content in beginner on Kendall Morgan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 04 Jul 2021 16:26:56 -0700</lastBuildDate><atom:link href="https://kendallmorgan.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jul 2021 16:26:56 -0700</lastBuildDate><atom:link href="https://kendallmorgan.com/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Helping someone learn to program </title>
       <link>https://kendallmorgan.com/posts/helping-someone-learn-to-program/</link>
@@ -17,16 +17,6 @@
       <description>A family member came to me and said that he is interested in learning how to program. Reflection on my experience learning software in academia I started to think about how I would want to learn programming if I didn&amp;rsquo;t do so in school.
 There are a few key goals I would want to focus on if I was starting out:
  Have a concrete project in mind. Learn how to get started quickly.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://kendallmorgan.com/posts/my-first-post/</link>
-      <pubDate>Wed, 29 Jul 2020 20:46:29 -0700</pubDate>
-      
-      <guid>https://kendallmorgan.com/posts/my-first-post/</guid>
-      <description>Expect to see more from me soon. Until then:
-print(&amp;#39;Hello, world&amp;#39;) </description>
     </item>
     
   </channel>
