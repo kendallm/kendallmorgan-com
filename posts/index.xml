@@ -10,6 +10,72 @@
         <atom:link href="https://kendallmorgan.com/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
+            <title>Thoughts on Code Reviews</title>
+            <link>https://kendallmorgan.com/posts/thoughts-on-code-reviews/</link>
+            <pubDate>Tue, 20 Jul 2021 17:54:11 -0700</pubDate>
+            
+            <guid>https://kendallmorgan.com/posts/thoughts-on-code-reviews/</guid>
+            <description>My company hosts engineering discussion panels and recently I have been a part of our code review discussions. Participating in these panels has forced me think intentionally about how I approach code reviews. This is an attempt to synthesize my approach.
+Overview I learn most efficiently when giving and receiving reviews and it seems to stick better than just reading or hearing advice passively. I see them as a way for me to help better others, help better myself, and help better the software that I build.</description>
+            <content type="html"><![CDATA[<p>My company hosts engineering discussion panels and recently I have been a part of our code review discussions. Participating in these panels has forced me think intentionally about how I approach code reviews. This is an attempt to synthesize my approach.</p>
+<h2 id="overview">Overview</h2>
+<p>I learn most efficiently when giving and receiving reviews and it seems to stick better than just reading or hearing advice passively. I see them as a way for me to help better others, help better myself, and help better the software that I build.</p>
+<p>I have also learned that code reviews are should not be primarily used to catch bugs, that&rsquo;s just a side effect. Code reviews are effective as a learning and teaching tool. They help elevate the ability of the people you build software with. The constant feedback cycle of doing and receiving code reviews is a useful tool for increasing software quality and readability. When doing code reviews you know someone else needs to understand your code and this helps emphasize clear and expressive code.</p>
+<h2 id="receiving-reviews">Receiving Reviews</h2>
+<h3 id="review-your-code-first">Review your code first</h3>
+<p>Before asking someone else to do a code review, review it yourself. I usually do this in the actual CR tool. This is an easy way to catch small things that you miss when heads down coding.</p>
+<h3 id="assign-someone-specific">Assign someone specific</h3>
+<p>If there isn&rsquo;t a specific owner then often times code reviews get delayed. It&rsquo;s not that others shouldn&rsquo;t look at it, but you want someone to be responsible for it. This prevents the <a href="https://en.wikipedia.org/wiki/Bystander_effect">bystander effect</a>.</p>
+<h3 id="be-kind-to-your-reviewer">Be kind to your reviewer</h3>
+<h4 id="give-as-much-context-as-possible">Give as much context as possible</h4>
+<p>Usually team members are familiar enough with your work that they have context already, but you can&rsquo;t make that assumption. The intent of the change should be clear. This is easily done by making sure the description in the CR is accurate and updated. If there are diagrams or design docs related to the change, link them in the CR. Make sure the description in the issue tracker is up to date and link that in the CR.</p>
+<h4 id="try-to-keep-reviews-small">Try to keep reviews small</h4>
+<p>This is one of the hardest things for me, but try to break changes into digestible pieces. If I see a review that is thousands of lines long and touches tens of files I dread it. I try to be conscious of that feeling when asking others to review my code. If a change does become large, break it up into smaller components and review each of those individually.</p>
+<h2 id="doing-reviews">Doing Reviews</h2>
+<h3 id="be-quick">Be Quick</h3>
+<p>Often times when someone asks you for a code review they become blocked on you completing the review to finish work. There is usually a tree of dependencies waiting for each review and getting them done quickly helps the entire team.</p>
+<p>I recommend setting aside time for code reviews in 2 ways:</p>
+<ol>
+<li>Check for assigned code reviews before standup.</li>
+<li>Check for assigned code reviews after submitting one myself.</li>
+</ol>
+<p>When I do see a code review that I am responsible for I ensure that I look at it before I start any new tasks with one exception: large reviews. If a code review is large and will take longer than 15 - 20 minutes then block out time to look at it later that day.</p>
+<p>With this approach I usually have a 24hr or less turn around for code reviews. This also give me something productive to do between waiting for my own reviews or starting a new task.</p>
+<h3 id="gain-context">Gain Context</h3>
+<p>When reviewing code you are likely to have some context around the change already. If you do not have context already  be sure you understand what the change does and why it&rsquo;s purpose. The goal here is to ensure that you know what you are reviewing and the scope of the change.</p>
+<p>If you were involved in the design or conception of a particular feature this step is fast. I start by looking at the ticket or merge request description to get the big picture. Next I will look at the commit messages. These are often smaller than a change description, but helps to understand the scope of a change. If I still don&rsquo;t have enough context then I reach out to the requester and ask for clarification.</p>
+<h3 id="automate-the-boring-things">Automate the boring things</h3>
+<p>A huge time sink in code reviews is feedback that should be caught with a linter or formatter. It&rsquo;s common to see comments like &ldquo;This variable should be final&rdquo;. This is low hanging fruit and should be caught before a code review starts. Teams should standardize on a style guide and use common linters to analyze code before it is reviewed. If there is something in a code review that seems like it should be caught with a linter then you should update the linter. This prevents noise in a code review that can cost time and increase cognitive load.</p>
+<h3 id="start-with-the-tests">Start with the tests</h3>
+<p>Once I understand the scope and intent of a change I start by looking at the tests. This usually gives me examples of typical call patterns and implementation expectations. I can also usually tease out assumptions and identify system boundaries based on mocked classes.</p>
+<h3 id="watch-the-boundaries">Watch the boundaries</h3>
+<p>When looking at a CR I ask myself two questions:</p>
+<ol>
+<li>Are we changing data coming into the system?</li>
+<li>Are we changing data going out of the system?</li>
+</ol>
+<p>If the answer to any of these are yes I tend to look at things on these boundaries more intently. A short list of things I think about at the boundaries of a system include:</p>
+<ol>
+<li>Backwards compatibility</li>
+<li>API design</li>
+<li>Dependency coupling.</li>
+</ol>
+<p>There is a lot of opportunity at boundaries to introduce errors and changes at boundaries can have a large blast radius.</p>
+<h3 id="darins-law-cover-your-ass">Darin&rsquo;s Law: Cover your A.S.S.</h3>
+<p>When dealing with large scale systems there is a lot that can go wrong. At Amazon I worked with a principal engineer who distilled this down to 3 topics: Availability, Security, and Support. While doing code reviews I always keep those things in mind.</p>
+<p>To ensure you are covering your A.S.S it use useful to ask your self:</p>
+<ol>
+<li>Can this change cause failure in your service or a dependency?</li>
+<li>Is this change doing anything that can impact customer data?</li>
+<li>Will I be able to diagnose issues with this change later?</li>
+<li>Will I be able to easily update this code path later?</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Code review is a useful tool for helping improve both software quality and technical acumen. The code review process is fun and has been a key component of my growth as an engineer. When requesting code reviews remember to be kind to your reviewer, you want to make the process of getting feedback as painless as possible. While reviewing code pay attention to your boundaries, and don&rsquo;t forget: Cover your A.S.S. in code reviews.</p>
+]]></content>
+        </item>
+        
+        <item>
             <title>Helping Someone Learn to Program</title>
             <link>https://kendallmorgan.com/posts/helping-someone-learn-to-program/</link>
             <pubDate>Sun, 04 Jul 2021 16:26:56 -0700</pubDate>

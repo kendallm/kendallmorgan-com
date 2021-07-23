@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 04 Jul 2021 16:26:56 -0700</lastBuildDate><atom:link href="https://kendallmorgan.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jul 2021 17:54:11 -0700</lastBuildDate><atom:link href="https://kendallmorgan.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thoughts on Code Reviews</title>
+      <link>https://kendallmorgan.com/posts/thoughts-on-code-reviews/</link>
+      <pubDate>Tue, 20 Jul 2021 17:54:11 -0700</pubDate>
+      
+      <guid>https://kendallmorgan.com/posts/thoughts-on-code-reviews/</guid>
+      <description>My company hosts engineering discussion panels and recently I have been a part of our code review discussions. Participating in these panels has forced me think intentionally about how I approach code reviews. This is an attempt to synthesize my approach.
+Overview I learn most efficiently when giving and receiving reviews and it seems to stick better than just reading or hearing advice passively. I see them as a way for me to help better others, help better myself, and help better the software that I build.</description>
+    </item>
+    
     <item>
       <title>Helping Someone Learn to Program</title>
       <link>https://kendallmorgan.com/posts/helping-someone-learn-to-program/</link>
