@@ -100,9 +100,9 @@ There are a few key goals I would want to focus on if I was starting out:
 <p><a href="https://www.python.org/downloads/release/python-396/">Python3</a></p>
 <p>Python is a good language to start out with for a ton of reasons. It is easy to get started with, but can become more complex as needed. It can be a bicycle or a rocket ship based on your needs. You can start with a file of just function calls and see something quickly, but you can also build up to object oriented programming and learn more advanced concepts as you need them.</p>
 <p>With python you can get started with something as simple as:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">&#39;Hello, world!&#39;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">&#39;Hello, world!&#39;</span>)
 </code></pre></div><p>When you start to dig into more advanced features you can migrate to something like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>():
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>():
 	
 	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(self):
 		print(<span style="color:#e6db74">&#39;Hello, world!&#39;</span>)
@@ -168,7 +168,7 @@ There are a few key goals I would want to focus on if I was starting out:
             <description>Expect to see more from me soon. Until then:
 print(&amp;#39;Hello, world&amp;#39;) </description>
             <content type="html"><![CDATA[<p>Expect to see more from me soon. Until then:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">&#39;Hello, world&#39;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">&#39;Hello, world&#39;</span>)
 </code></pre></div>]]></content>
         </item>
         
