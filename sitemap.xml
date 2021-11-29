@@ -3,16 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kendallmorgan.com/</loc>
-    <lastmod>2021-07-20T17:54:11-07:00</lastmod>
+    <lastmod>2021-11-15T16:58:46-08:00</lastmod>
     <priority>0</priority>
+  </url><url>
+    <loc>https://kendallmorgan.com/posts/automating-gmail-labels-and-filters/</loc>
+    <lastmod>2021-11-15T16:58:46-08:00</lastmod>
+  </url><url>
+    <loc>https://kendallmorgan.com/tags/automation/</loc>
+    <lastmod>2021-11-15T16:58:46-08:00</lastmod>
+  </url><url>
+    <loc>https://kendallmorgan.com/tags/</loc>
+    <lastmod>2021-11-15T16:58:46-08:00</lastmod>
   </url><url>
     <loc>https://kendallmorgan.com/tags/code-reviews/</loc>
     <lastmod>2021-07-20T17:54:11-07:00</lastmod>
   </url><url>
     <loc>https://kendallmorgan.com/tags/software-engineering/</loc>
-    <lastmod>2021-07-20T17:54:11-07:00</lastmod>
-  </url><url>
-    <loc>https://kendallmorgan.com/tags/</loc>
     <lastmod>2021-07-20T17:54:11-07:00</lastmod>
   </url><url>
     <loc>https://kendallmorgan.com/posts/thoughts-on-code-reviews/</loc>

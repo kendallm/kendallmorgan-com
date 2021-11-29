@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 20 Jul 2021 17:54:11 -0700</lastBuildDate><atom:link href="https://kendallmorgan.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Nov 2021 16:58:46 -0800</lastBuildDate><atom:link href="https://kendallmorgan.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating Gmail Labels and Filters</title>
+      <link>https://kendallmorgan.com/posts/automating-gmail-labels-and-filters/</link>
+      <pubDate>Mon, 15 Nov 2021 16:58:46 -0800</pubDate>
+      
+      <guid>https://kendallmorgan.com/posts/automating-gmail-labels-and-filters/</guid>
+      <description>Email inboxes work like a stack. The newest email goes to the top of the inbox and is the first email you see when opening an email client. I find that I get a ton of emails that I either don&amp;rsquo;t want to see, or don&amp;rsquo;t need to be at the top of my inbox. Using filters and labels makes email more tolerable. Automating these filters and labels makes them usable.</description>
+    </item>
+    
     <item>
       <title>Thoughts on Code Reviews</title>
       <link>https://kendallmorgan.com/posts/thoughts-on-code-reviews/</link>
