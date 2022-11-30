@@ -39,15 +39,15 @@ schedule and I want to prioritize certain types of notifications over others. I 
 <p>Setting up gmailctl isn&rsquo;t as straightforward as I wish, but once it&rsquo;s setup then things just work.</p>
 <h3 id="installation">Installation</h3>
 <p>You will need to install gmailctl on your system. On my mac I used <a href="https://brew.sh/">Homebrew</a> to do this, but the <a href="https://github.com/mbrt/gmailctl#install">gmailctl README</a> has alternatives.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install gmailctl
-</code></pre></div><h3 id="initial-setup">Initial Setup</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install gmailctl
+</span></span></code></pre></div><h3 id="initial-setup">Initial Setup</h3>
 <p>This is where things become a little less straightforward, it requires creating a project in GCP and giving that project access to the gmail api. The tool walks you through how to do this by using its init function.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gmailctl init
-</code></pre></div><p>Once this is done you are ready to start automating your inbox.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gmailctl init
+</span></span></code></pre></div><p>Once this is done you are ready to start automating your inbox.</p>
 <h2 id="setting-up-rules">Setting Up Rules</h2>
 <p>To edit your gmailctl configuration you can use its edit command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gmailctl edit
-</code></pre></div><p>This will open your default editor and allow you to edit your configuration. The tool comes with a template that you can use as a base for your configuration.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gmailctl edit
+</span></span></code></pre></div><p>This will open your default editor and allow you to edit your configuration. The tool comes with a template that you can use as a base for your configuration.</p>
 <p>Once you edit the rules file gmailctl will check for any errors in your configuration. If there are any then it will prompt you to fix them. If your configuration is error free then the tool will look for changes in rules, if there are any the tool will show you a diff and then ask if you want to apply these changes to your Gmail account. You can chose to apply these changes now or you can run <code>gmailctl apply</code> at a later point to apply changes. This will look something like this:</p>
 <figure class="center"><img src="/img/gmail-labels.png"/>
 </figure>
@@ -60,11 +60,11 @@ schedule and I want to prioritize certain types of notifications over others. I 
 <h3 id="version-control">Version Control</h3>
 <p>Since the rules file is plain text you can use version control to store your rules. This is nice because you can always go back to an old version of your rules if desired. I do this with a private repository in Github. I keep the repo private to prevent accidentally leaking private email addresses.</p>
 <p>The tool provides a download command, but I recommend copying the file from the <code>.gmailctl</code> directory instead as the download command will get rid of any structure you added to your file. I have a shell alias setup to automate this for me.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">function</span> editEmailRules<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-    gmailctl edit;
-    cp $HOME/.gmailctl/config.jsonnet $DOTFILES/gmailctl;
-<span style="color:#f92672">}</span>
-</code></pre></div><h2 id="final-thoughts">Final Thoughts</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> editEmailRules<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    gmailctl edit;
+</span></span><span style="display:flex;"><span>    cp $HOME/.gmailctl/config.jsonnet $DOTFILES/gmailctl;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="final-thoughts">Final Thoughts</h2>
 <p>I love automating things and I love using plain text files where I can. This gives me the ability to automate how I use email to make it less cumbersome. Even if you chose not to automate your inbox, you can <a href="https://support.google.com/mail/answer/6579?hl=en">manually manage</a> filters in the Gmail interface. Other tools can also do similar automation such as <a href="https://github.com/jessfraz/gmailfilters">gmailfilters</a> or <a href="https://github.com/antifuchs/gmail-britta">gmail-britta</a>. You can also find email services like <a href="hey.com">Hey</a> that tries to do a lot of this automation for you.</p>
 <p>It&rsquo;s common that when you start using a new service you get a ton of new emails. Using filters to control that can be helpful, automating those filters can also help. Whatever you chose I highly suggest taming your Gmail inbox with filters.</p>
 ]]></content>
@@ -161,18 +161,18 @@ There are a few key goals I would want to focus on if I was starting out:
 <p><a href="https://www.python.org/downloads/release/python-396/">Python3</a></p>
 <p>Python is a good language to start out with for a ton of reasons. It is easy to get started with, but can become more complex as needed. It can be a bicycle or a rocket ship based on your needs. You can start with a file of just function calls and see something quickly, but you can also build up to object oriented programming and learn more advanced concepts as you need them.</p>
 <p>With python you can get started with something as simple as:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">&#39;Hello, world!&#39;</span>)
-</code></pre></div><p>When you start to dig into more advanced features you can migrate to something like:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>():
-	
-	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(self):
-		print(<span style="color:#e6db74">&#39;Hello, world!&#39;</span>)
-
-
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
-	program <span style="color:#f92672">=</span> Program()
-	program<span style="color:#f92672">.</span>run()
-</code></pre></div><p>This allows you to get something working fast without needing to understand classes, instances, methods, etc.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Hello, world!&#39;</span>)
+</span></span></code></pre></div><p>When you start to dig into more advanced features you can migrate to something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>():
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(self):
+</span></span><span style="display:flex;"><span>		print(<span style="color:#e6db74">&#39;Hello, world!&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>	program <span style="color:#f92672">=</span> Program()
+</span></span><span style="display:flex;"><span>	program<span style="color:#f92672">.</span>run()
+</span></span></code></pre></div><p>This allows you to get something working fast without needing to understand classes, instances, methods, etc.</p>
 <p>As you learn more and want to get into a specific domain the concepts you learn in python will be transferable.</p>
 <h3 id="tools">Tools</h3>
 <ul>
@@ -229,8 +229,8 @@ There are a few key goals I would want to focus on if I was starting out:
             <description>Expect to see more from me soon. Until then:
 print(&amp;#39;Hello, world&amp;#39;) </description>
             <content type="html"><![CDATA[<p>Expect to see more from me soon. Until then:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(<span style="color:#e6db74">&#39;Hello, world&#39;</span>)
-</code></pre></div>]]></content>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Hello, world&#39;</span>)
+</span></span></code></pre></div>]]></content>
         </item>
         
     </channel>
